@@ -211,5 +211,3 @@ MIT License - feel free to use this project for personal or commercial purposes.
 ---
 
 **Need help?** Open an issue on GitHub or check out the [Vercel AI SDK documentation](https://sdk.vercel.ai/docs).
-
-Built with ❤️ using Vercel AI SDK
