@@ -4,7 +4,7 @@ An AI-powered blog post summarizer built with Next.js, Vercel AI SDK, and OpenAI
 
 ![AI Blog Summarizer Demo](https://img.shields.io/badge/Next.js-15-black) ![Vercel AI SDK](https://img.shields.io/badge/Vercel_AI_SDK-3.1-blue) ![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue)
 
-## ✨ Features
+##  Features
 
 - **Real-time Streaming Summaries** - Watch summaries generate word-by-word in real-time
 - **Multiple Summary Styles** - Choose between concise (150-200 words) and detailed (300-400 words) summaries
@@ -13,7 +13,7 @@ An AI-powered blog post summarizer built with Next.js, Vercel AI SDK, and OpenAI
 - **Easy Integration** - Drop the component into any Next.js app
 - **Production Ready** - Built with best practices and error handling
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### Prerequisites
 
@@ -108,7 +108,7 @@ Request:
 
 Response: Streaming text response with the generated summary
 
-## 🎨 Customization
+##  Customization
 
 ### Change the AI Model
 
@@ -187,7 +187,7 @@ Run `npm install` to ensure all dependencies are installed
 - **Language**: TypeScript
 - **Runtime**: Node.js 18+
 
-## 📖 Resources
+##  Resources
 
 - [Vercel AI SDK Documentation](https://sdk.vercel.ai/docs)
 - [OpenAI API Reference](https://platform.openai.com/docs)
@@ -202,7 +202,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 MIT License - feel free to use this project for personal or commercial purposes.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Built with [Vercel AI SDK](https://sdk.vercel.ai)
 - Powered by [OpenAI GPT-4o](https://openai.com)
