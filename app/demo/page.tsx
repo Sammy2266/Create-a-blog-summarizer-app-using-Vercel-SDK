@@ -1,7 +1,6 @@
 import BlogSummarizer from '@/app/components/BlogSummarizer';
 
-const SAMPLE_BLOG_POST = `
-# The Future of AI in Web Development
+const SAMPLE_BLOG_POST = `# The Future of AI in Web Development
 
 Artificial Intelligence is revolutionizing how we build web applications. From automating repetitive tasks to generating code, AI tools are becoming essential in every developer's toolkit.
 
@@ -39,8 +38,7 @@ Developers who embrace these tools early will have a significant competitive adv
 
 ## Conclusion
 
-AI isn't replacing developers; it's augmenting them. By leveraging tools like Vercel's AI SDK, you can build smarter applications faster than ever before. The time to start is now.
-`;
+AI isn't replacing developers; it's augmenting them. By leveraging tools like Vercel's AI SDK, you can build smarter applications faster than ever before. The time to start is now.`;
 
 export default function DemoPage() {
   return (
