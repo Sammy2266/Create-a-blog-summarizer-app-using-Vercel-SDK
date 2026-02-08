@@ -1,0 +1,151 @@
+import { streamText } from 'ai';
+import { anthropic } from '@ai-sdk/anthropic';
+
+export async function POST(request: Request) {
+  try {
+    const { content, style = 'concise' } = await request.json();
+
+    if (!content) {
+      return new Response('Content is required', { status: 400 });
+    }
+
+    const systemPrompt = `You are an expert blog post summarizer. Create a ${style} summary that:
+- Captures the main ideas and key takeaways
+# 1. Make sure you're in the right directory
+cd blog-summarizer
+
+# 2. Install Anthropic SDK
+npm install @ai-sdk/anthropic
+
+# 3. Edit the API route file
+nano app/api/summarize/route.ts
+# (Paste the code above, then Ctrl+O, Enter, Ctrl+X)
+
+# 4. Edit the environment file
+nano .env.local
+# (Add: ANTHROPIC_API_KEY=sk-ant-your-key)
+# (Ctrl+O, Enter, Ctrl+X)
+
+# 5. Clear cache and restart
+rm -rf .next
+npm run dev- Uses clear, accessible language
+- Highlights actionable insights
+- Maintains the original tone and intent
+- Limits the summary to 150-200 words for concise style, or 300-400 words for detailed style`;
+
+    const result = await streamText({
+      model: anthropic('claude-3-5-sonnet-20241022'),
+      system: systemPrompt,
+      prompt: `Summarize this blog post:\n\n${content}`,
+    });
+
+    return result.toDataStreamResponse();
+  } catch (error) {
+    console.error('Summarization error:', error);
+    return # 1. Make sure you're in the right directory
+cd blog-summarizer
+
+# 2. Install Anthropic SDK
+npm install @ai-sdk/anthropic
+
+# 3. Edit the API route file
+nano app/api/summarize/route.ts
+# (Paste the code above, then Ctrl+O, Enter, Ctrl+X)
+
+# 4. Edit the environment file
+nano .env.local
+# (Add: ANTHROPIC_API_KEY=sk-ant-your-key)
+# (Ctrl+O, Enter, Ctrl+X)
+
+# 5. Clear cache and restart
+rm -rf .next
+npm run dev# 1. Make sure you're in the right directory
+cd blog-summarizer
+
+# 2. Install Anthropic SDK
+npm install @ai-sdk/anthropic
+
+# 3. Edit the API route file
+nano app/api/summarize/route.ts
+# (Paste the code above, then Ctrl+O, Enter, Ctrl+X)
+
+# 4. Edit the environment file
+nano .env.local
+# (Add: ANTHROPIC_API_KEY=sk-ant-your-key)
+# (Ctrl+O, Enter, Ctrl+X)
+
+# 5. Clear cache and restart
+rm -rf .next
+npm run dev# 1. Make sure you're in the right directory
+cd blog-summarizer
+
+# 2. Install Anthropic SDK
+npm install @ai-sdk/anthropic
+
+# 3. Edit the API route file
+nano app/api/summarize/route.ts
+# (Paste the code above, then Ctrl+O, Enter, Ctrl+X)
+
+# 4. Edit the environment file
+nano .env.local
+# (Add: ANTHROPIC_API_KEY=sk-ant-your-key)
+# (Ctrl+O, Enter, Ctrl+X)
+
+# 5. Clear cache and restart
+rm -rf .next
+npm run dev# 1. Make sure you're in the right directory
+cd blog-summarizer
+
+# 2. Install Anthropic SDK
+npm install @ai-sdk/anthropic
+
+# 3. Edit the API route file
+nano app/api/summarize/route.ts
+# (Paste the code above, then Ctrl+O, Enter, Ctrl+X)
+
+# 4. Edit the environment file
+nano .env.local
+# (Add: ANTHROPIC_API_KEY=sk-ant-your-key)
+# (Ctrl+O, Enter, Ctrl+X)
+
+# 5. Clear cache and restart
+rm -rf .next
+npm run devnew Response('Error generating summary', { status: 500 });
+  }
+}
+# 1. Make sure you're in the right directory
+cd blog-summarizer
+
+# 2. Install Anthropic SDK
+npm install @ai-sdk/anthropic
+
+# 3. Edit the API route file
+nano app/api/summarize/route.ts
+# (Paste the code above, then Ctrl+O, Enter, Ctrl+X)
+
+# 4. Edit the environment file
+nano .env.local
+# (Add: ANTHROPIC_API_KEY=sk-ant-your-key)
+# (Ctrl+O, Enter, Ctrl+X)
+
+# 5. Clear cache and restart
+rm -rf .next
+npm run dev
+# 1. Make sure you're in the right directory
+cd blog-summarizer
+
+# 2. Install Anthropic SDK
+npm install @ai-sdk/anthropic
+
+# 3. Edit the API route file
+nano app/api/summarize/route.ts
+# (Paste the code above, then Ctrl+O, Enter, Ctrl+X)
+
+# 4. Edit the environment file
+nano .env.local
+# (Add: ANTHROPIC_API_KEY=sk-ant-your-key)
+# (Ctrl+O, Enter, Ctrl+X)
+
+# 5. Clear cache and restart
+rm -rf .next
+npm run dev

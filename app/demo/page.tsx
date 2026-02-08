@@ -71,7 +71,6 @@ export default function DemoPage() {
         {/* Footer */}
         <div className="mt-12 pt-8 border-t border-gray-200">
           <p className="text-gray-600 text-sm">
-            Built with Vercel AI SDK • Powered by GPT-4o
           </p>
         </div>
       </div>
