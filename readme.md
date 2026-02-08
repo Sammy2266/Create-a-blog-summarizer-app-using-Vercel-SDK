@@ -23,7 +23,7 @@ An AI-powered blog post summarizer built with Next.js, Vercel AI SDK, and OpenAI
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Sammy2266/Create-a-blog-summarizer-app-using-Vercel-SDK
 cd blog-summarizer
 ```
 
